@@ -54,7 +54,7 @@ export default function ScrollAnimation({
   threshold = 0.1
 }: ScrollAnimationProps) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { threshold, once: true })
+  const isInView = useInView(ref, { amount:threshold, once: true })
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'end start']
