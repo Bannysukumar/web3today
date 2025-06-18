@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+/* Typography */
+@layer components {
+  .heading-1 {
+    @apply font-space-grotesk text-4xl md:text-5xl font-bold tracking-tight leading-tight;
+  }
+
+  .heading-2 {
+    @apply font-space-grotesk text-3xl md:text-4xl font-bold tracking-tight leading-tight;
+  }
+
+  .heading-3 {
+    @apply font-space-grotesk text-2xl md:text-3xl font-semibold tracking-tight leading-tight;
+  }
+
+  .body-text {
+    @apply font-inter text-base md:text-lg leading-relaxed text-white/70;
+  }
+
+  .quote-text {
+    @apply font-inter text-lg md:text-xl italic leading-relaxed text-white/80;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black/50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-500/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500/70;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient text animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 bg-[length:200%_200%] animate-[gradient_8s_ease_infinite];
+}
+
+/* Link styles */
+a {
+  @apply font-inter text-white/90 no-underline transition-all duration-200;
+}
+
+a:hover {
+  @apply text-white underline;
+}
+
+/* Button styles */
+button {
+  @apply font-inter;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+} 
