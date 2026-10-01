@@ -1,60 +1,55 @@
-# QuickContracts.dev Landing Page
+<!-- readme-seo: bannysukumar-professional-v4 -->
 
-A modern, animated landing page for QuickContracts.dev built with Next.js, Tailwind CSS, and Framer Motion.
+# QuickContracts.dev
 
-[![License](https://img.shields.io/github/license/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/commits/main)
+QuickContracts.dev is a Next.js landing page. The npm package name is `quickcontracts-landing`. Routes exist for home, about, services, and contact. The home page renders `Hero`, `ForkBelt`, and `BuilderJourney`.
 
 ## Overview
 
-A modern, animated landing page for QuickContracts.dev built with Next.js, Tailwind CSS, and Framer Motion.
+The repository is named `web3today`. The source identifies the site as the QuickContracts.dev landing page, including the note file `QuickContracts.dev Landing Page Sections v1.md`. Dependencies are Next.js 14, React, Tailwind CSS, Framer Motion, and Firebase. No Solidity contract is in this repository, so blockchain network topics are not used.
 
-
-What is actually in the repository: `public/`, `src/`. GitHub reports the primary language as TypeScript.
-
-Published site recorded on the repository: https://web3today-psi.vercel.app
+The recorded homepage is https://web3today-psi.vercel.app.
 
 ## Features
 
-
-- 🎨 Modern, clean design inspired by Jules and Bentfolio
-- ✨ Smooth animations and transitions
-- 📱 Fully responsive layout
-- 🎯 Optimized for performance
-- 🌙 Dark theme with glass morphism effects
-- Src/App/About page
-- Src/App/Contact page
-- Src/App page
-- Src/App/Services page
+- Home page composed of hero, fork belt, and builder journey sections
+- About, services, and contact routes
+- Firebase listed as a dependency
 
 ## Tech Stack
 
 | Technology | Where it shows up |
 |---|---|
-| Next.js | React framework |
-| React | User interface |
-| Firebase | Backend services used by this repository |
-| Tailwind CSS | Styling |
+| Next.js 14 | `next.config.js` and `package.json` |
+| React | `package.json` |
+| TypeScript | `tsconfig.json` |
+| Tailwind CSS | `tailwind.config.ts` |
+| Framer Motion | `package.json` |
+| Firebase | `package.json` |
 
-## Project Architecture
+## Architecture
 
-Next.js App Router project. Pages live under app/.
+Next.js App Router in `src/app` → page sections under `src/components`.
 
 ## Project Structure
 
 ```text
 web3today/
+├── src/app/page.tsx
+├── src/app/about/
+├── src/app/services/
+├── src/app/contact/
 ├── public/
-├── src/
-├── QuickContracts.dev Landing Page Sections v1.md
 ├── next.config.js
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── tailwind.config.ts
-├── tsconfig.json
+└── package.json
 ```
 
-## Getting Started
+## Prerequisites
+
+- Node.js
+- npm
+
+## Installation
 
 ```bash
 git clone https://github.com/Bannysukumar/web3today.git
@@ -63,16 +58,17 @@ npm install
 npm run dev
 ```
 
-Scripts defined in package.json:
+## Usage
 
-- `npm run dev` — `next dev`
-- `npm run build` — `next build`
-- `npm run start` — `next start`
-- `npm run lint` — `next lint`
+`npm run dev` runs `next dev`. The home route is `src/app/page.tsx`. About, services, and contact are sibling routes.
+
+## Demo
+
+https://web3today-psi.vercel.app
 
 ## Deployment
 
-- The repository homepage is https://web3today-psi.vercel.app.
+`next.config.js` is present. The GitHub homepage is https://web3today-psi.vercel.app.
 
 ## Contributing
 
@@ -84,8 +80,6 @@ Licensed under MIT. See [LICENSE](LICENSE).
 
 ## Author
 
-[Banny Sukumar](https://github.com/Bannysukumar)
+Banny Sukumar
 
-- GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
-- Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
-- LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
+GitHub: https://github.com/Bannysukumar
