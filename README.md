@@ -2,69 +2,90 @@
 
 A modern, animated landing page for QuickContracts.dev built with Next.js, Tailwind CSS, and Framer Motion.
 
+[![License](https://img.shields.io/github/license/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/web3today)](https://github.com/Bannysukumar/web3today/commits/main)
+
+## Overview
+
+A modern, animated landing page for QuickContracts.dev built with Next.js, Tailwind CSS, and Framer Motion.
+
+
+What is actually in the repository: `public/`, `src/`. GitHub reports the primary language as TypeScript.
+
+Published site recorded on the repository: https://web3today-psi.vercel.app
+
 ## Features
+
 
 - 🎨 Modern, clean design inspired by Jules and Bentfolio
 - ✨ Smooth animations and transitions
 - 📱 Fully responsive layout
 - 🎯 Optimized for performance
 - 🌙 Dark theme with glass morphism effects
-
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/quickcontracts-landing.git
-cd quickcontracts-landing
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Run the development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+- Src/App/About page
+- Src/App/Contact page
+- Src/App page
+- Src/App/Services page
 
 ## Tech Stack
 
-- [Next.js](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
+| Technology | Where it shows up |
+|---|---|
+| Next.js | React framework |
+| React | User interface |
+| Firebase | Backend services used by this repository |
+| Tailwind CSS | Styling |
+
+## Project Architecture
+
+Next.js App Router project. Pages live under app/.
 
 ## Project Structure
 
+```text
+web3today/
+├── public/
+├── src/
+├── QuickContracts.dev Landing Page Sections v1.md
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
 ```
-src/
-├── app/              # Next.js app directory
-├── components/       # React components
-├── styles/          # Global styles
-└── public/          # Static assets
+
+## Getting Started
+
+```bash
+git clone https://github.com/Bannysukumar/web3today.git
+cd web3today
+npm install
+npm run dev
 ```
+
+Scripts defined in package.json:
+
+- `npm run dev` — `next dev`
+- `npm run build` — `next build`
+- `npm run start` — `next start`
+- `npm run lint` — `next lint`
+
+## Deployment
+
+- The repository homepage is https://web3today-psi.vercel.app.
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Licensed under MIT. See [LICENSE](LICENSE).
 
-<!-- readme-seo: bannysukumar -->
+## Author
 
-## Open source
+[Banny Sukumar](https://github.com/Bannysukumar)
 
-This repository is open source and maintained by [Banny Sukumar](https://github.com/Bannysukumar). Web3today is published so other developers can study the code and contribute.
-
-## License
-
-Released under the [MIT License](LICENSE). Copyright (c) 2026 Banny Sukumar. See [CONTRIBUTING.md](CONTRIBUTING.md) if you want to help.
+- GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
+- Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
+- LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
